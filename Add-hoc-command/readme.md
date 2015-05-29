@@ -21,11 +21,11 @@ Before you use Ansible's command, you have to setup ssh on the remote machine.
         %sudo   ALL=(ALL:ALL) NOPASSWD:ALL
 
 3. Setup ssh-copy-id from control machine to remote machine (in the control machine)
-    $ssh-copy-id administrator@<Remote-machine-IP>
+   $ssh-copy-id administrator@<Remote-machine-IP>
    After that, you enter your credentials and done.
 
-and then, let's setup the ssh-agent to remember your credentials (in the control machine)
-    $ ssh-agent bash
-    $ ssh-add ~/.ssh/id_rsa
+In the continuous steps, let's setup the ssh-agent to remember your credentials (in the control machine)
+   $ ssh-agent bash
+   $ ssh-add ~/.ssh/id_rsa
     
 Now, erverything are done for you to use the add-on commands
