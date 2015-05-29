@@ -9,15 +9,17 @@ Communications between client and server based on ssh connection with linux serv
 
 II. Setup environment
 
-Before you use Ansible's command, you have to setup ssh on the remote machine. 
+Before you use Ansible's command, you have to setup ssh on the remote machine.
+
 1. In this learning, I use Ubuntu OS 14.04 LTS. My users are administrator on both servers (remote and control machines) 
+
 2. Config ubuntu server to allow running the sudo command without promt your password (in the remote machines)
     $sudo visudo
     Edit the following line:
         %sudo   ALL=(ALL:ALL) ALL
     to
         %sudo   ALL=(ALL:ALL) NOPASSWD:ALL
-    
+
 3. Setup ssh-copy-id from control machine to remote machine (in the control machine)
     $ssh-copy-id administrator@<Remote-machine-IP>
    After that, you enter your credentials and done.
